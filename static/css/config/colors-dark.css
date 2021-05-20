@@ -1,0 +1,8 @@
+:root {
+  --accentColor: #ff5200;
+  --accentColorLight: #ff51003d;
+  --primaryColor: #282e35;
+  --secondaryColor: #45505c;
+  --primaryInvertedColor: #fff;
+  --primaryInvertedColorLight: rgb(54, 54, 54);
+}

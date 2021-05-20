@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- <div id="spinner_overlay">
+  <div class="loader center">Loading...</div>
+</div> -->
+<form id="form" onsubmit="event.preventDefault()" class="reg-form">
+  <h1 id="title-large">Join Bloggie</h1>
+  <div id="warning-msg">
+    <img src="/static/assets/warning.svg" alt="" class="ic_warning" />
+    <p id="error_text"></p>
+  </div>
+  <input
+    type="text"
+    class="text-input"
+    id="fname"
+    placeholder="Full Name"
+  /><br /><br />
+  <input
+    type="text"
+    class="text-input"
+    id="uname"
+    placeholder="Username"
+  /><br /><br />
+  <input
+    autocomplete="none"
+    type="password"
+    class="text-input"
+    id="pwd"
+    placeholder="Password"
+  /><br /><br />
+  <input
+    type="text"
+    class="text-input"
+    id="email"
+    placeholder="email"
+  /><br /><br />
+  <button id="submitBtn" class="btn btn-m" disabled>
+    <!-- <img src="/static/assets/spinner.svg" alt="" id="spinner-svg" /> -->
+    Let's Dive In
+  </button>
+</form>
+
+<script src="/static/scripts/handleReg.js"></script>
+{% endblock %}
